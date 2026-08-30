@@ -1,0 +1,590 @@
+{
+  "common": {
+    "app_name": "LingoCoon",
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "back": "Indietro",
+    "next": "Avanti",
+    "complete": "Completa",
+    "logout": "Esci",
+    "login": "Accedi",
+    "register": "Registrati",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Conferma password",
+    "forgot_password": "Password dimenticata?",
+    "or": "o",
+    "continue_with_google": "Continua con Google"
+  },
+  "auth": {
+    "or_sign_in_with_email": "Oppure accedi con email",
+    "login_title": "Accedi",
+    "register_title": "Registrati",
+    "reset_password_title": "Reimposta password",
+    "email_placeholder": "tua@email.com",
+    "password_placeholder": "••••••••",
+    "login_button": "Accedi",
+    "register_button": "Registrati",
+    "logging_in": "Accesso in corso...",
+    "registering": "Registrazione in corso...",
+    "sending": "Invio in corso...",
+    "reset_password_description": "Inserisci la tua email e ti invieremo un link per reimpostare la password.",
+    "send_reset_email": "Invia email di reset",
+    "back_to_login": "Torna al login",
+    "no_account": "Non hai un account?",
+    "have_account": "Hai già un account?",
+    "errors": {
+      "fill_all_fields": "Compila tutti i campi",
+      "password_min_length": "La password deve essere di almeno 6 caratteri",
+      "passwords_not_match": "Le password non corrispondono",
+      "invalid_email": "Inserisci un'email valida"
+    }
+  },
+  "onboarding": {
+    "welcome": "Benvenuto!",
+    "subtitle": "Configuriamo la tua esperienza di apprendimento",
+    "welcome_title": "Benvenuto su LingoCoon",
+    "welcome_subtitle": "Impara le lingue con l'apprendimento personalizzato",
+    "get_started": "Inizia",
+    "setup_time": "Richiede meno di 2 minuti",
+    "create_account_to_save": "Crea un account per salvare le tue scelte e iniziare ad imparare!",
+    "creating_account": "Creazione account in corso...",
+    "saving": "Salvataggio...",
+    "skip": "Salta",
+    "optional": "opzionale",
+    "tell_us_more": "Raccontaci di più",
+    "tell_us_more_placeholder": "Condividi dettagli aggiuntivi sui tuoi obiettivi di apprendimento...",
+    "progress_region": "Progresso onboarding",
+    "progress_aria": "Passo {{current}} di {{total}}",
+    "welcome_benefits": {
+      "smart_title": "Apprendimento Personalizzato",
+      "smart_desc": "Le sessioni di studio si adattano al tuo livello e ritmo",
+      "tracking_title": "Monitoraggio Intelligente",
+      "tracking_desc": "Segui il tuo percorso con informazioni dettagliate",
+      "faster_title": "Impara Più Velocemente",
+      "faster_desc": "Metodi scientificamente provati per la memorizzazione"
+    },
+    "step_indicator": "Passo {{current}} di {{total}}",
+    "step_labels": {
+      "welcome": "Benvenuto",
+      "native_label": "Lingua Madre",
+      "target_label": "Lingua Obiettivo",
+      "level_label": "Il Tuo Livello",
+      "purpose_label": "Scopo dell'Apprendimento",
+      "nickname_label": "Soprannome",
+      "summary_label": "Riepilogo"
+    },
+    "step1": {
+      "title": "Quali lingue vuoi imparare?",
+      "subtitle": "Scegli la tua lingua madre e quella che vuoi studiare",
+      "native_language": "La tua lingua madre",
+      "native_subtitle": "Seleziona la lingua che parli fluentemente",
+      "target_language": "Lingua che vuoi imparare",
+      "target_subtitle": "Scegli la lingua che vuoi studiare"
+    },
+    "step2": {
+      "title": "Perché vuoi imparare?",
+      "subtitle": "Questo ci aiuta a personalizzare la tua esperienza",
+      "goals": {
+        "travel": "Viaggi",
+        "travel_desc": "Comunicare viaggiando",
+        "work": "Lavoro",
+        "work_desc": "Uso professionale",
+        "study": "Studio",
+        "study_desc": "Esami e certificazioni",
+        "hobby": "Hobby",
+        "hobby_desc": "Interesse personale",
+        "culture": "Cultura",
+        "culture_desc": "Film, libri, musica",
+        "conversation": "Conversazione",
+        "conversation_desc": "Parlare con i madrelingua",
+        "other": "Altro",
+        "other_desc": "Obiettivi personali"
+      }
+    },
+    "step3": {
+      "title": "Qual è il tuo livello?",
+      "subtitle": "Nella lingua che vuoi imparare",
+      "levels": {
+        "absolute_beginner": "Principiante Assoluto",
+        "absolute_beginner_desc": "Non ho mai studiato questa lingua",
+        "beginner": "Principiante",
+        "beginner_desc": "Conosco alcune parole e frasi base",
+        "elementary": "Elementare",
+        "elementary_desc": "Frasi semplici",
+        "intermediate": "Intermedio",
+        "intermediate_desc": "Posso sostenere conversazioni semplici",
+        "advanced": "Avanzato",
+        "advanced_desc": "Posso discutere argomenti complessi",
+        "native": "Madrelingua",
+        "native_desc": "Competenza da madrelingua"
+      }
+    },
+    "nickname_step": {
+      "title": "Come ti chiamiamo?",
+      "subtitle": "Scegli un soprannome per il tuo profilo",
+      "placeholder": "Inserisci il tuo soprannome",
+      "aria_label": "Campo soprannome",
+      "helper": "Puoi cambiarlo nelle impostazioni"
+    },
+    "summary": {
+      "title": "Pronto ad iniziare?",
+      "subtitle": "Rivedi le tue scelte prima di iniziare",
+      "level": "Livello Attuale",
+      "purpose": "Scopo dell'Apprendimento",
+      "nickname": "Soprannome",
+      "additional_details": "Dettagli Aggiuntivi",
+      "change_later": "Puoi modificare queste impostazioni nel tuo profilo"
+    },
+    "continue_to_register": "Vai alla Registrazione",
+    "errors": {
+      "select_both_languages": "Seleziona entrambe le lingue",
+      "languages_must_differ": "Le lingue devono essere diverse",
+      "select_at_least_one_goal": "Seleziona almeno un obiettivo",
+      "select_level": "Seleziona il tuo livello",
+      "generic_save": "Impossibile salvare le preferenze. Riprova.",
+      "invalid_data": "Compila tutti i campi obbligatori"
+    }
+  },
+  "publicOnboarding": {
+    "language": {
+      "title": "Quale lingua vuoi imparare?",
+      "subtitle": "Scegli la lingua che vuoi studiare"
+    },
+    "goals": {
+      "title": "Perché vuoi imparare?",
+      "subtitle": "Seleziona uno o più obiettivi",
+      "travel": "Viaggi",
+      "travel_desc": "Comunicare viaggiando",
+      "work": "Lavoro",
+      "work_desc": "Crescita professionale",
+      "study": "Studio",
+      "study_desc": "Esami e certificazioni",
+      "culture": "Cultura",
+      "culture_desc": "Film, libri, musica",
+      "conversation": "Conversazione",
+      "conversation_desc": "Parlare con i madrelingua",
+      "other": "Altro",
+      "other_desc": "Obiettivi personali"
+    },
+    "level": {
+      "title": "Qual è il tuo livello?",
+      "subtitle": "Nella lingua che vuoi imparare"
+    },
+    "levels": {
+      "beginner": "Principiante",
+      "beginner_desc": "Conosco poche parole",
+      "elementary": "Elementare",
+      "elementary_desc": "Frasi semplici",
+      "intermediate": "Intermedio",
+      "intermediate_desc": "Conversazioni base",
+      "advanced": "Avanzato",
+      "advanced_desc": "A mio agio nella maggior parte delle situazioni",
+      "native": "Madrelingua",
+      "native_desc": "Competenza da madrelingua"
+    },
+    "hasAccount": "Hai già un account?",
+    "signIn": "Accedi",
+    "continue": "Continua",
+    "finish": "Salva preferenze",
+    "style": {
+      "title": "Come impari meglio?",
+      "subtitle": "Seleziona il tuo stile di apprendimento",
+      "visual": "Visivo",
+      "visual_desc": "Imparo guardando immagini e video",
+      "auditory": "Uditivo",
+      "auditory_desc": "Imparo ascoltando audio e conversazioni",
+      "kinesthetic": "Cinestetico",
+      "kinesthetic_desc": "Imparo facendo esercizi e scrivendo"
+    },
+    "errors": {
+      "selectLanguage": "Seleziona una lingua",
+      "selectGoal": "Seleziona almeno un obiettivo",
+      "selectStyle": "Seleziona il tuo stile di apprendimento",
+      "selectLevel": "Seleziona il tuo livello",
+      "generic": "Impossibile salvare le preferenze. Riprova."
+    }
+  },
+  "home": {
+    "title": "Home",
+    "welcome": "Benvenuto",
+    "decks_desc": "Gestisci i tuoi mazzi e inizia sessioni di studio classiche.",
+    "create_desc": "Aggiungi un nuovo mazzo per la coppia di lingue che vuoi praticare.",
+    "ai_desc": "Chatta liberamente con l'IA o studia i tuoi mazzi con un tutor AI carta per carta.",
+    "open": "Apri",
+    "create": "Crea",
+    "study_widget": {
+      "title": "Sessione di Studio",
+      "cards_to_review": "{{count}} flashcard da rivedere oggi",
+      "subtitle": "Mantieni viva la memoria!",
+      "start": "Inizia Ora"
+    },
+    "stats": {
+      "total": "Flashcard Totali",
+      "new": "Nuove",
+      "to_review": "Da Rivedere",
+      "mastered": "Padroneggiate",
+      "avg_reviews": "Ripetizioni Medie"
+    },
+    "menu": {
+      "title": "Menu Principale",
+      "study_session": "Inizia Sessione di Studio",
+      "study_session_desc": "Rivedi le flashcard programmate per oggi",
+      "manage_flashcards": "Gestisci le Flashcard",
+      "manage_flashcards_desc": "Crea, modifica ed elimina le tue flashcard",
+      "progress": "Visualizza i Progressi",
+      "progress_desc": "Analizza le tue statistiche di apprendimento",
+      "settings": "Impostazioni Profilo",
+      "settings_desc": "Modifica preferenze e configurazioni"
+    }
+  },
+  "flashcards": {
+    "title": "Gestione Flashcard",
+    "create_new": "Aggiungi Nuova Carta",
+    "your_flashcards": "Le Tue Flashcard",
+    "count": "{{count}} carta",
+    "count_plural": "{{count}} carte",
+    "empty_state": "Nessuna carta ancora",
+    "empty_state_cta": "Aggiungine una a sinistra!",
+    "load_more": "Carica Altro",
+    "form": {
+      "front_label": "Parola da imparare",
+      "front_placeholder": "Inserisci parola o frase da imparare...",
+      "back_label": "Traduzione",
+      "back_placeholder": "Inserisci traduzione...",
+      "original_text": "Testo originale",
+      "translation": "Traduzione",
+      "category": "Categoria (opzionale)",
+      "category_placeholder": "Es.: viaggio, lavoro, quotidiano",
+      "notes": "Note (opzionale)",
+      "notes_placeholder": "Aggiungi contesto o esempi d'uso",
+      "translate_auto": "Suggerisci traduzioni",
+      "translating": "Ricerca dei significati...",
+      "suggestions_title": "Scegli il significato corretto",
+      "suggestions_hint": "Seleziona un suggerimento, poi modifica la traduzione se necessario.",
+      "save_card": "Salva Flashcard",
+      "saving": "Salvataggio...",
+      "creating": "Creazione in corso...",
+      "create_button": "Crea Carta",
+      "from_language": "Dalla tua lingua:",
+      "to_language": "A:"
+    },
+    "edit": {
+      "front_label": "Fronte",
+      "back_label": "Retro (Traduzione)",
+      "front_placeholder": "Fronte della carta",
+      "back_placeholder": "Retro della carta",
+      "save": "Salva",
+      "saving": "Salvataggio...",
+      "cancel": "Annulla",
+      "edit_title": "Modifica carta",
+      "delete_title": "Elimina carta",
+      "delete_confirm": "Sei sicuro di voler eliminare questa carta?"
+    },
+    "errors": {
+      "original_required": "Il testo originale è obbligatorio",
+      "translation_required": "La traduzione è obbligatoria",
+      "enter_text_to_translate": "Inserisci un testo da tradurre",
+      "translation_error": "Impossibile suggerire traduzioni. Inseriscine una manualmente o riprova.",
+      "create_error": "Impossibile creare la carta. Riprova."
+    },
+    "success": {
+      "card_saved": "Flashcard salvata con successo!"
+    },
+    "delete_confirm": "Sei sicuro di voler eliminare questa flashcard?"
+  },
+  "study": {
+    "session_complete_title": "Sessione Completata!",
+    "session_complete_subtitle": "Hai ripassato tutte le {{count}} carte.",
+    "back_to_deck": "Torna al Mazzo",
+    "show_answer": "Mostra Risposta",
+    "ai_tutor_label": "Tutor AI",
+    "progress": "{{current}} / {{total}}",
+    "ai_error": "Qualcosa è andato storto. Riprova.",
+    "rating_save_error": "Impossibile salvare il voto. Riprova.",
+    "restart": "Ricomincia",
+    "responds_in": "Risponde in {{language}}",
+    "ask_about_card": "Fai una domanda su questa carta.",
+    "thinking": "Sto pensando…",
+    "ask_placeholder": "Chiedi qualcosa…",
+    "send": "Invia",
+    "ratings": {
+      "again": "Non ricordo",
+      "hard": "Difficile",
+      "good": "Bene",
+      "easy": "Facile"
+    },
+    "ai_mode": {
+      "badge": "Modalità AI",
+      "session_complete_title": "Sessione AI Completata!",
+      "session_complete_subtitle": "Hai studiato tutte le {{count}} carte con il tuo tutor AI.",
+      "retry_classic": "Riprova (Classico)",
+      "back_to_deck": "Torna al Mazzo",
+      "send": "Invia",
+      "press_enter": "Premi Invio per inviare",
+      "input_thinking": "L'AI sta pensando…",
+      "input_placeholder": "Scrivi la tua risposta…",
+      "start_error": "Si è verificato un errore all'avvio della sessione. Riprova.",
+      "ai_error": "Qualcosa è andato storto. Riprova.",
+      "rating_save_error": "Non è stato possibile salvare la risposta. Riprova oppure continua senza salvare questo voto.",
+      "continue_without_saving": "Continua"
+    }
+  },
+  "ai_page": {
+    "title": "Modalità AI",
+    "tab_chat": "Chat Libera",
+    "tab_decks": "Studia con i Mazzi",
+    "no_decks": "Non hai ancora nessun mazzo.",
+    "create_first_deck": "Crea il tuo primo mazzo",
+    "deck_hint": "Scegli un mazzo — il tutor AI ti interrogherà carta per carta.",
+    "start": "Inizia",
+    "free_chat": "Chat Libera",
+    "study_with_decks": "Studia con i Mazzi"
+  },
+  "chat": {
+    "welcome": "Ciao! Sono Lingo, il tuo assistente linguistico AI. Chiedimi qualsiasi cosa — traduzioni, grammatica, conversazioni pratiche, o qualunque domanda sulle lingue!",
+    "thinking": "Lingo sta pensando…",
+    "placeholder": "Chiedimi qualcosa…",
+    "press_enter": "Premi Invio per inviare",
+    "error": "Qualcosa è andato storto. Riprova."
+  },
+  "deck_actions": {
+    "delete_confirm": "Sei sicuro di voler eliminare \"{{title}}\"?\n\nQuesto eliminerà permanentemente il mazzo e tutte le sue carte. Questa azione è irreversibile.",
+    "deleting": "Eliminazione...",
+    "delete": "Elimina Mazzo"
+  },
+  "study_session": {
+    "title": "Sessione di Studio",
+    "progress": "Progresso",
+    "progress_count": "{{current}} / {{total}}",
+    "loading": "Caricamento flashcard...",
+    "interrupt": "Interrompi Sessione",
+    "completed": {
+      "title": "Sessione Completata!",
+      "studied": "Hai studiato <strong>{{count}}</strong> flashcard",
+      "no_cards": "Nessuna flashcard da rivedere oggi.<br />Ottimo lavoro!",
+      "back_to_dashboard": "Torna alla Dashboard",
+      "study_again": "Studia di Nuovo",
+      "review_again": "Ripassa ancora",
+      "all_easy": "Perfetto, tutto facile!",
+      "motivation": "La costanza è la chiave del successo!",
+      "come_back": "Torna domani per continuare il tuo percorso."
+    },
+    "deck_not_found": "Mazzo non trovato.",
+    "no_cards_due": "Nessuna carta per oggi",
+    "all_caught_up": "Hai completato lo studio di questo mazzo per oggi.",
+    "study_all_cards": "Continua a studiare (tutte le carte)",
+    "evaluation": {
+      "question": "Quanto bene lo ricordavi?",
+      "forgot": "Dimenticato",
+      "forgot_desc": "Ripassa presto",
+      "hard": "Difficile",
+      "hard_desc": "Con fatica",
+      "good": "Bene",
+      "good_desc": "Nessun problema",
+      "easy": "Facile",
+      "easy_desc": "Perfetto!",
+      "tap_to_reveal": "Tocca per rivelare"
+    },
+    "card_info": {
+      "level": "Livello:",
+      "reviews": "Ripetizioni:",
+      "category": "Categoria:",
+      "remember_translation": "Ricordi la traduzione?",
+      "original": "Originale",
+      "translation": "Traduzione",
+      "click_to_flip": "Clicca per vedere la risposta"
+    },
+    "empty_deck": "Nessuna carta in questo mazzo.",
+    "add_cards": "Aggiungi Carte",
+    "click_to_flip_back": "← clicca per girare",
+    "explain_word": "Chiedi di spiegare",
+    "ask_placeholder": "Chiedi qualcosa su questa carta…",
+    "ai_thinking": "sto pensando…"
+  },
+  "languages": {
+    "it-IT": "Italiano",
+    "en-US": "Inglese",
+    "uk-UA": "Ucraino",
+    "fr-FR": "Francese"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "under_construction": "In Costruzione",
+    "coming_soon": "La possibilità di modificare le impostazioni sarà presto disponibile!",
+    "your_profile": "Il Tuo Profilo",
+    "native_language": "Lingua Madre:",
+    "target_language": "Lingua Obiettivo:",
+    "level": "Livello:",
+    "goals": "Obiettivi:",
+    "manage_desc": "Gestisci le tue preferenze e le impostazioni del profilo",
+    "language_preferences": "Preferenze Linguistiche",
+    "language_desc": "Scegli la lingua preferita per l'interfaccia dell'applicazione",
+    "application_language": "Lingua dell'Applicazione",
+    "application_language_hint": "Cambia la lingua di menu, pulsanti e testi dell'interfaccia. La lingua dei contenuti di apprendimento si imposta separatamente nel profilo.",
+    "profile_desc": "Il tuo profilo di apprendimento e preferenze"
+  },
+  "statistics": {
+    "title": "Statistiche e Progressi",
+    "under_construction": "In Costruzione",
+    "coming_soon": "Le statistiche dettagliate saranno disponibili presto!"
+  },
+  "landing": {
+    "hero_title": "Padroneggia le Lingue",
+    "hero_subtitle": "Il tuo compagno personale per l'apprendimento linguistico, progettato per risultati reali.",
+    "cta_start": "Inizia ad Imparare",
+    "cta_login": "Ho Già un Account",
+    "login_button": "Accedi"
+  },
+  "cookies": {
+    "title": "Utilizziamo i cookie",
+    "description": "Utilizziamo i cookie per migliorare la tua esperienza e analizzare l'utilizzo del sito. Continuando, accetti la nostra politica sui cookie.",
+    "accept": "Accetta Tutti",
+    "reject": "Rifiuta Tutti",
+    "readMore": "Scopri di più"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "ai": "Modalità AI",
+    "flashcards": "Flashcard",
+    "lexicoon": "LexiCoon",
+    "settings": "Impostazioni"
+  },
+  "decks": {
+    "title": "Flashcard Hub",
+    "subtitle": "Gestisci i tuoi mazzi e inizia a studiare",
+    "create_new": "Crea Mazzo",
+    "card_count": "{{count}} carte",
+    "card_count_single": "{{count}} carta",
+    "study": "Studia",
+    "edit": "Modifica",
+    "generate_with_ai": "Genera con AI",
+    "study_with_ai": "Studia con AI",
+    "empty": {
+      "title": "Nessun mazzo ancora",
+      "description": "Crea il tuo primo mazzo per iniziare ad organizzare le tue flashcard.",
+      "create_button": "Crea il Tuo Primo Mazzo"
+    },
+    "modal": {
+      "create_title": "Crea Nuovo Mazzo",
+      "deck_title": "Titolo del Mazzo",
+      "title_placeholder": "Inserisci il titolo del mazzo...",
+      "creating": "Creazione in corso...",
+      "create_button": "Crea Mazzo",
+      "study_language": "Lingua da studiare",
+      "translate_language": "La tua lingua"
+    },
+    "back_to_decks": "Torna ai Mazzi",
+    "start_study": "Inizia Sessione di Studio",
+    "cards_in_deck": "Carte nel Mazzo",
+    "errors": {
+      "title_required": "Inserisci un titolo per il mazzo",
+      "create_failed": "Impossibile creare il mazzo. Riprova."
+    },
+    "back_to_deck": "Torna al Mazzo"
+  },
+  "ai_deck": {
+    "page_title": "Genera mazzo con AI",
+    "page_subtitle": "Descrivi cosa vuoi imparare. L'AI genererà le flashcard per te.",
+    "prompt_label": "Cosa vuoi imparare?",
+    "prompt_placeholder": "Es. Crea un mazzo di {{target}} di livello {{level}} per {{purpose}}, con traduzioni in {{native}}",
+    "generate_button": "Genera mazzo",
+    "shortcut_hint": "⌘+Invio per generare",
+    "examples_label": "Esempi",
+    "fallback_target_language": "la lingua che vuoi imparare",
+    "fallback_native_language": "la tua lingua",
+    "fallback_level": "il tuo livello attuale",
+    "fallback_purpose": "il tuo obiettivo di apprendimento",
+    "suggestions": {
+      "personal_goal": "Crea un mazzo di {{target}} di livello {{level}} per il mio obiettivo: {{details}}. Aggiungi traduzioni in {{native}}",
+      "purpose": "20 parole pratiche di {{target}} per {{purpose}}, livello {{level}}, con traduzioni in {{native}}",
+      "conversation": "Frasi comuni in {{target}} per conversazioni legate a {{purpose}}, con significati in {{native}}",
+      "verbs": "Verbi essenziali in {{target}} per uno studente di livello {{level}}, con traduzioni in {{native}} ed esempi",
+      "food": "Parole utili in {{target}} su cibo e vita quotidiana, livello {{level}}, con traduzioni in {{native}}"
+    },
+    "generating_title": "Generazione del mazzo in corso…",
+    "generating_subtitle": "Selezione del vocabolario, traduzione e aggiunta di frasi di esempio.",
+    "error_console": "Torna indietro e riprova. La richiesta non è stata salvata.",
+    "error_back": "← Torna indietro",
+    "errors": {
+      "invalid_prompt": "Descrivi cosa vuoi imparare usando al massimo 1000 caratteri.",
+      "unexpected_format": "L'AI non è riuscita a creare un mazzo valido. Riprova.",
+      "service_unavailable": "Il servizio AI non è temporaneamente disponibile. Riprova.",
+      "save_failed": "Non è stato possibile salvare il mazzo. Riprova."
+    },
+    "review_title": "Rivedi il tuo mazzo",
+    "review_subtitle": "Modifica, aggiungi o elimina carte prima di salvare.",
+    "cards_count": "{{count}} carte",
+    "deck_title_label": "Titolo del mazzo",
+    "front_language_label": "Lingua del fronte",
+    "back_language_label": "Lingua del retro",
+    "save_button": "Salva mazzo ({{count}} carte)",
+    "saving_button": "Salvataggio…",
+    "add_card_button": "Aggiungi carta",
+    "edit_card_label": "Modifica carta {{number}}",
+    "delete_card_label": "Elimina carta {{number}}",
+    "new_card_label": "Nuova carta",
+    "front_placeholder": "Fronte",
+    "back_placeholder": "Retro",
+    "example_placeholder": "Frase di esempio (opzionale)",
+    "save_card": "Salva",
+    "add_card": "Aggiungi",
+    "cancel": "Annulla"
+  },
+  "lexicoon": {
+    "subtitle": "Un dizionario avanzato personalizzato per le lingue che studi.",
+    "search_label": "Quale parola vuoi capire?",
+    "search_placeholder": "Scrivi una parola o una frase breve…",
+    "search_button": "Cerca",
+    "search_hint": "Riceverai i significati nella tua lingua madre e gli esempi nella lingua che stai imparando.",
+    "empty_title": "Cerca una parola",
+    "empty_description": "LexiCoon spiegherà significato, uso, esempi, sinonimi e contrari.",
+    "corrected_from": "Ho corretto \"{{from}}\" in \"{{to}}\". Gli esempi usano la forma corretta.",
+    "translations": "Traduzioni",
+    "usage_note": "Nota d'uso",
+    "essence": "In sostanza",
+    "explanation": "Spiegazione",
+    "contrast": "Contrasto",
+    "meaning_synonyms": "Sinonimi per questo significato",
+    "examples": "Esempi",
+    "synonyms": "Sinonimi",
+    "antonyms": "Contrari",
+    "usage": "Uso scritto e parlato",
+    "written": "Scritto",
+    "spoken": "Parlato",
+    "collocations": "Si usa spesso con",
+    "curiosity": "Vale la pena sapere",
+    "errors": {
+      "invalid_query": "Inserisci una parola o una frase breve usando al massimo 100 caratteri.",
+      "invalid_response": "LexiCoon non è riuscito a creare una voce valida. Riprova.",
+      "service_unavailable": "LexiCoon non è temporaneamente disponibile. Riprova."
+    }
+  },
+  "stt": {
+    "start_recording": "Parla",
+    "stop_recording": "Ferma registrazione",
+    "transcribing": "Trascrizione…",
+    "transcribing_hint": "Sto trascrivendo la tua voce…",
+    "errors": {
+      "unsupported": "Questo browser non può registrare audio.",
+      "microphone_denied": "L'accesso al microfono è stato negato. Autorizzalo e riprova.",
+      "transcription_failed": "Non è stato possibile riconoscere la voce. Riprova."
+    }
+  },
+  "tts": {
+    "voice": "Voce",
+    "play_audio": "Riproduci audio",
+    "play_pronunciation": "Riproduci pronuncia",
+    "enable_auto_play": "Attiva riproduzione automatica",
+    "disable_auto_play": "Disattiva riproduzione automatica",
+    "voices": {
+      "male": "Maschile",
+      "female": "Femminile"
+    }
+  }
+}

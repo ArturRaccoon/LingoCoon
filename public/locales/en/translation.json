@@ -1,0 +1,590 @@
+{
+  "common": {
+    "app_name": "LingoCoon",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "complete": "Complete",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "forgot_password": "Forgot password?",
+    "or": "or",
+    "continue_with_google": "Continue with Google"
+  },
+  "auth": {
+    "or_sign_in_with_email": "Or sign in with email",
+    "login_title": "Login",
+    "register_title": "Register",
+    "reset_password_title": "Reset Password",
+    "email_placeholder": "your@email.com",
+    "password_placeholder": "••••••••",
+    "login_button": "Login",
+    "register_button": "Register",
+    "logging_in": "Logging in...",
+    "registering": "Registering...",
+    "sending": "Sending...",
+    "reset_password_description": "Enter your email and we'll send you a link to reset your password.",
+    "send_reset_email": "Send Reset Email",
+    "back_to_login": "Back to Login",
+    "no_account": "Don't have an account?",
+    "have_account": "Already have an account?",
+    "errors": {
+      "fill_all_fields": "Fill in all fields",
+      "password_min_length": "Password must be at least 6 characters",
+      "passwords_not_match": "Passwords don't match",
+      "invalid_email": "Enter a valid email"
+    }
+  },
+  "onboarding": {
+    "welcome": "Welcome!",
+    "subtitle": "Let's set up your learning experience",
+    "welcome_title": "Welcome to LingoCoon",
+    "welcome_subtitle": "Learn languages with personalized learning",
+    "get_started": "Get Started",
+    "setup_time": "Takes less than 2 minutes to set up",
+    "create_account_to_save": "Create an account to save your choices and begin learning!",
+    "creating_account": "Creating your account...",
+    "saving": "Saving...",
+    "skip": "Skip",
+    "optional": "optional",
+    "tell_us_more": "Tell us more",
+    "tell_us_more_placeholder": "Share any additional details about your learning goals...",
+    "progress_region": "Onboarding progress",
+    "progress_aria": "Step {{current}} of {{total}}",
+    "welcome_benefits": {
+      "smart_title": "Personalized Learning",
+      "smart_desc": "Study sessions adapt to your level and pace",
+      "tracking_title": "Smart Progress Tracking",
+      "tracking_desc": "Track your journey with detailed insights",
+      "faster_title": "Learn Faster",
+      "faster_desc": "Scientifically proven methods for retention"
+    },
+    "step_indicator": "Step {{current}} of {{total}}",
+    "step_labels": {
+      "welcome": "Welcome",
+      "native_label": "Native Language",
+      "target_label": "Target Language",
+      "level_label": "Your Level",
+      "purpose_label": "Learning Purpose",
+      "nickname_label": "Nickname",
+      "summary_label": "Summary"
+    },
+    "step1": {
+      "title": "Which languages do you want to learn?",
+      "subtitle": "Choose your native language and the one you want to study",
+      "native_language": "Your native language",
+      "native_subtitle": "Select the language you speak fluently",
+      "target_language": "Language you want to learn",
+      "target_subtitle": "Choose the language you want to study"
+    },
+    "step2": {
+      "title": "Why do you want to learn?",
+      "subtitle": "This helps us personalize your learning experience",
+      "goals": {
+        "travel": "Travel",
+        "travel_desc": "Communicate while traveling",
+        "work": "Work",
+        "work_desc": "Professional use",
+        "study": "Study",
+        "study_desc": "Exams and certifications",
+        "hobby": "Hobby",
+        "hobby_desc": "Personal interest and enjoyment",
+        "culture": "Culture",
+        "culture_desc": "Movies, books, music",
+        "conversation": "Conversation",
+        "conversation_desc": "Talk with natives",
+        "other": "Other",
+        "other_desc": "Personal goals"
+      }
+    },
+    "step3": {
+      "title": "What's your level?",
+      "subtitle": "In the language you want to learn",
+      "levels": {
+        "absolute_beginner": "Absolute Beginner",
+        "absolute_beginner_desc": "I've never studied this language before",
+        "beginner": "Beginner",
+        "beginner_desc": "I know some basic words and phrases",
+        "elementary": "Elementary",
+        "elementary_desc": "Simple sentences",
+        "intermediate": "Intermediate",
+        "intermediate_desc": "I can hold simple conversations",
+        "advanced": "Advanced",
+        "advanced_desc": "I can discuss complex topics fluently",
+        "native": "Native",
+        "native_desc": "Native competence"
+      }
+    },
+    "nickname_step": {
+      "title": "What should we call you?",
+      "subtitle": "Choose a nickname for your profile",
+      "placeholder": "Enter your nickname",
+      "aria_label": "Nickname input",
+      "helper": "You can change this later in settings"
+    },
+    "summary": {
+      "title": "Ready to start learning?",
+      "subtitle": "Review your choices before we begin",
+      "level": "Current Level",
+      "purpose": "Learning Purpose",
+      "nickname": "Nickname",
+      "additional_details": "Additional Details",
+      "change_later": "You can change these settings later in your profile"
+    },
+    "continue_to_register": "Go to Registration",
+    "errors": {
+      "select_both_languages": "Select both languages",
+      "languages_must_differ": "Languages must be different",
+      "select_at_least_one_goal": "Select at least one goal",
+      "select_level": "Select your level",
+      "generic_save": "Failed to save your preferences. Please try again.",
+      "invalid_data": "Please complete all required fields"
+    }
+  },
+  "publicOnboarding": {
+    "language": {
+      "title": "Which language do you want to learn?",
+      "subtitle": "Choose the language you want to study"
+    },
+    "goals": {
+      "title": "Why do you want to learn?",
+      "subtitle": "Select one or more goals",
+      "travel": "Travel",
+      "travel_desc": "Communicate while traveling",
+      "work": "Work",
+      "work_desc": "Professional growth",
+      "study": "Study",
+      "study_desc": "Exams and certifications",
+      "culture": "Culture",
+      "culture_desc": "Films, books, music",
+      "conversation": "Conversation",
+      "conversation_desc": "Talk with natives",
+      "other": "Other",
+      "other_desc": "Personal goals"
+    },
+    "level": {
+      "title": "What's your level?",
+      "subtitle": "In the language you want to learn"
+    },
+    "levels": {
+      "beginner": "Beginner",
+      "beginner_desc": "I know just a few words",
+      "elementary": "Elementary",
+      "elementary_desc": "Simple sentences",
+      "intermediate": "Intermediate",
+      "intermediate_desc": "Basic conversations",
+      "advanced": "Advanced",
+      "advanced_desc": "Comfortable in most situations",
+      "native": "Native",
+      "native_desc": "Native proficiency"
+    },
+    "hasAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "continue": "Continue",
+    "finish": "Save preferences",
+    "style": {
+      "title": "How do you learn best?",
+      "subtitle": "Select your learning style",
+      "visual": "Visual",
+      "visual_desc": "I learn by watching images and videos",
+      "auditory": "Auditory",
+      "auditory_desc": "I learn by listening to audio and conversations",
+      "kinesthetic": "Kinesthetic",
+      "kinesthetic_desc": "I learn by doing exercises and writing"
+    },
+    "errors": {
+      "selectLanguage": "Please select a language",
+      "selectGoal": "Please select at least one goal",
+      "selectStyle": "Please select your learning style",
+      "selectLevel": "Please select your level",
+      "generic": "We couldn't save your preferences. Please try again."
+    }
+  },
+  "home": {
+    "title": "Home",
+    "welcome": "Welcome",
+    "decks_desc": "Manage your flashcard decks and start classic study sessions.",
+    "create_desc": "Add a new deck for a language pair you want to practice.",
+    "ai_desc": "Chat freely with the AI or study your decks with an AI tutor card-by-card.",
+    "open": "Open",
+    "create": "Create",
+    "study_widget": {
+      "title": "Study Session",
+      "cards_to_review": "{{count}} flashcard to review today",
+      "subtitle": "Keep your memory alive!",
+      "start": "Start Now"
+    },
+    "stats": {
+      "total": "Total Flashcards",
+      "new": "New",
+      "to_review": "To Review",
+      "mastered": "Mastered",
+      "avg_reviews": "Avg Reviews"
+    },
+    "menu": {
+      "title": "Main Menu",
+      "study_session": "Start Study Session",
+      "study_session_desc": "Review today's scheduled flashcards",
+      "manage_flashcards": "Manage my Flashcards",
+      "manage_flashcards_desc": "Create, edit and delete your flashcards",
+      "progress": "View my Progress",
+      "progress_desc": "Analyze your learning statistics",
+      "settings": "Profile Settings",
+      "settings_desc": "Modify preferences and configurations"
+    }
+  },
+  "flashcards": {
+    "title": "Flashcard Management",
+    "create_new": "Add New Card",
+    "your_flashcards": "Your Flashcards",
+    "count": "{{count}} card",
+    "count_plural": "{{count}} cards",
+    "empty_state": "No cards yet",
+    "empty_state_cta": "Add one on the left!",
+    "load_more": "Load More",
+    "form": {
+      "front_label": "Word to learn",
+      "front_placeholder": "Enter word or phrase to learn...",
+      "back_label": "Translation",
+      "back_placeholder": "Enter translation...",
+      "original_text": "Original text",
+      "translation": "Translation",
+      "category": "Category (optional)",
+      "category_placeholder": "E.g.: travel, work, daily",
+      "notes": "Notes (optional)",
+      "notes_placeholder": "Add context or usage examples",
+      "translate_auto": "Suggest translations",
+      "translating": "Finding meanings...",
+      "suggestions_title": "Choose the intended meaning",
+      "suggestions_hint": "Select a suggestion, then edit the translation if needed.",
+      "save_card": "Save Flashcard",
+      "saving": "Saving...",
+      "creating": "Creating...",
+      "create_button": "Create Card",
+      "from_language": "From your language:",
+      "to_language": "To:"
+    },
+    "edit": {
+      "front_label": "Front",
+      "back_label": "Back (Translation)",
+      "front_placeholder": "Front of card",
+      "back_placeholder": "Back of card",
+      "save": "Save",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "edit_title": "Edit card",
+      "delete_title": "Delete card",
+      "delete_confirm": "Are you sure you want to delete this card?"
+    },
+    "errors": {
+      "original_required": "Original text is required",
+      "translation_required": "Translation is required",
+      "enter_text_to_translate": "Enter text to translate",
+      "translation_error": "Could not suggest translations. Enter one manually or try again.",
+      "create_error": "Could not create the card. Please try again."
+    },
+    "success": {
+      "card_saved": "Flashcard saved successfully!"
+    },
+    "delete_confirm": "Are you sure you want to delete this flashcard?"
+  },
+  "study": {
+    "session_complete_title": "Session Complete!",
+    "session_complete_subtitle": "You reviewed all {{count}} cards.",
+    "back_to_deck": "Back to Deck",
+    "show_answer": "Show Answer",
+    "ai_tutor_label": "AI Tutor",
+    "progress": "{{current}} / {{total}}",
+    "ai_error": "Something went wrong. Please try again.",
+    "rating_save_error": "Could not save your rating. Please try again.",
+    "restart": "Restart",
+    "responds_in": "Responds in {{language}}",
+    "ask_about_card": "Ask a question about this card.",
+    "thinking": "Thinking…",
+    "ask_placeholder": "Ask something…",
+    "send": "Send",
+    "ratings": {
+      "again": "Forgot",
+      "hard": "Hard",
+      "good": "Good",
+      "easy": "Easy"
+    },
+    "ai_mode": {
+      "badge": "AI Mode",
+      "session_complete_title": "AI Session Complete!",
+      "session_complete_subtitle": "You studied all {{count}} cards with your AI tutor.",
+      "retry_classic": "Retry (Classic)",
+      "back_to_deck": "Back to Deck",
+      "send": "Send",
+      "press_enter": "Press Enter to send",
+      "input_thinking": "AI is thinking…",
+      "input_placeholder": "Write your answer…",
+      "start_error": "An error occurred while starting the session. Please try again.",
+      "ai_error": "Something went wrong. Please try again.",
+      "rating_save_error": "Your answer could not be saved. Retry, or continue without saving this rating.",
+      "continue_without_saving": "Continue"
+    }
+  },
+  "ai_page": {
+    "title": "AI Mode",
+    "tab_chat": "Free Chat",
+    "tab_decks": "Study with Decks",
+    "no_decks": "You don't have any decks yet.",
+    "create_first_deck": "Create your first deck",
+    "deck_hint": "Choose a deck — the AI tutor will quiz you card by card.",
+    "start": "Start",
+    "free_chat": "Free Chat",
+    "study_with_decks": "Study with Decks"
+  },
+  "chat": {
+    "welcome": "Hi! I'm Lingo, your AI language assistant. Ask me anything — translations, grammar, practice conversations, or anything language-related!",
+    "thinking": "Lingo is thinking…",
+    "placeholder": "Ask me anything…",
+    "press_enter": "Press Enter to send",
+    "error": "Something went wrong. Please try again."
+  },
+  "deck_actions": {
+    "delete_confirm": "Are you sure you want to delete \"{{title}}\"?\n\nThis will permanently delete the deck and all its cards. This action cannot be undone.",
+    "deleting": "Deleting...",
+    "delete": "Delete Deck"
+  },
+  "study_session": {
+    "title": "Study Session",
+    "progress": "Progress",
+    "progress_count": "{{current}} / {{total}}",
+    "loading": "Loading flashcards...",
+    "interrupt": "Interrupt Session",
+    "completed": {
+      "title": "Session Completed!",
+      "studied": "You studied <strong>{{count}}</strong> flashcard",
+      "no_cards": "No flashcards to review today.<br />Great job!",
+      "back_to_dashboard": "Back to Dashboard",
+      "study_again": "Study Again",
+      "review_again": "Review again",
+      "all_easy": "Perfect, all easy!",
+      "motivation": "Consistency is the key to success!",
+      "come_back": "Come back tomorrow to continue your journey."
+    },
+    "deck_not_found": "Deck not found.",
+    "no_cards_due": "No cards due today",
+    "all_caught_up": "You're all caught up with this deck.",
+    "study_all_cards": "Keep studying (all cards)",
+    "evaluation": {
+      "question": "How well did you remember it?",
+      "forgot": "Forgot",
+      "forgot_desc": "Review soon",
+      "hard": "Hard",
+      "hard_desc": "With effort",
+      "good": "Good",
+      "good_desc": "No problem",
+      "easy": "Easy",
+      "easy_desc": "Perfect!",
+      "tap_to_reveal": "Tap to reveal"
+    },
+    "card_info": {
+      "level": "Level:",
+      "reviews": "Reviews:",
+      "category": "Category:",
+      "remember_translation": "Do you remember the translation?",
+      "original": "Original",
+      "translation": "Translation",
+      "click_to_flip": "Click to see answer"
+    },
+    "empty_deck": "No cards in this deck yet.",
+    "add_cards": "Add Cards",
+    "click_to_flip_back": "← click to flip back",
+    "explain_word": "Explain this word",
+    "ask_placeholder": "Ask anything about this card…",
+    "ai_thinking": "thinking…"
+  },
+  "languages": {
+    "it-IT": "Italian",
+    "en-US": "English",
+    "uk-UA": "Ukrainian",
+    "fr-FR": "French"
+  },
+  "settings": {
+    "title": "Settings",
+    "under_construction": "Under Construction",
+    "coming_soon": "The ability to modify settings will be available soon!",
+    "your_profile": "Your Profile",
+    "native_language": "Native Language:",
+    "target_language": "Target Language:",
+    "level": "Level:",
+    "goals": "Goals:",
+    "manage_desc": "Manage your preferences and profile settings",
+    "language_preferences": "Language Preferences",
+    "language_desc": "Choose your preferred language for the application interface",
+    "application_language": "Application Language",
+    "application_language_hint": "This changes the language of menus, buttons, and interface text. Your learning content language is set separately in your profile.",
+    "profile_desc": "Your learning profile and preferences"
+  },
+  "statistics": {
+    "title": "Statistics and Progress",
+    "under_construction": "Under Construction",
+    "coming_soon": "Detailed statistics will be available soon!"
+  },
+  "landing": {
+    "hero_title": "Master Languages",
+    "hero_subtitle": "Your personal language learning companion designed for real results.",
+    "cta_start": "Start Learning",
+    "cta_login": "I Already Have an Account",
+    "login_button": "Sign In"
+  },
+  "cookies": {
+    "title": "We use cookies",
+    "description": "We use cookies to improve your experience and analyze site usage. By continuing, you accept our cookie policy.",
+    "accept": "Accept All",
+    "reject": "Reject All",
+    "readMore": "Learn More"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "ai": "AI Mode",
+    "flashcards": "Flashcards",
+    "lexicoon": "LexiCoon",
+    "settings": "Settings"
+  },
+  "decks": {
+    "title": "Flashcard Hub",
+    "subtitle": "Manage your decks and start studying",
+    "create_new": "Create Deck",
+    "card_count": "{{count}} cards",
+    "card_count_single": "{{count}} card",
+    "study": "Study",
+    "edit": "Edit",
+    "generate_with_ai": "Generate with AI",
+    "study_with_ai": "Study with AI",
+    "empty": {
+      "title": "No decks yet",
+      "description": "Create your first deck to start organizing your flashcards and begin your learning journey.",
+      "create_button": "Create Your First Deck"
+    },
+    "modal": {
+      "create_title": "Create New Deck",
+      "deck_title": "Deck Title",
+      "title_placeholder": "Enter deck title...",
+      "creating": "Creating...",
+      "create_button": "Create Deck",
+      "study_language": "Language to study",
+      "translate_language": "Your language"
+    },
+    "back_to_decks": "Back to Decks",
+    "start_study": "Start Study Session",
+    "cards_in_deck": "Cards in Deck",
+    "errors": {
+      "title_required": "Please enter a deck title",
+      "create_failed": "Failed to create deck. Please try again."
+    },
+    "back_to_deck": "Back to Deck"
+  },
+  "ai_deck": {
+    "page_title": "Generate deck with AI",
+    "page_subtitle": "Describe what you want to learn. The AI will generate flashcards for you to review.",
+    "prompt_label": "What do you want to learn?",
+    "prompt_placeholder": "e.g. Create a {{level}} {{target}} deck for {{purpose}}, with {{native}} translations",
+    "generate_button": "Generate deck",
+    "shortcut_hint": "⌘+Enter to generate",
+    "examples_label": "Examples",
+    "fallback_target_language": "the language you want to learn",
+    "fallback_native_language": "your language",
+    "fallback_level": "your current level",
+    "fallback_purpose": "your learning goal",
+    "suggestions": {
+      "personal_goal": "Create a {{level}} {{target}} deck for my goal: {{details}}. Add {{native}} translations",
+      "purpose": "20 practical {{target}} words for {{purpose}}, at {{level}} level, with {{native}} translations",
+      "conversation": "Common {{target}} phrases for conversations related to {{purpose}}, with {{native}} meanings",
+      "verbs": "Essential {{target}} verbs for a {{level}} learner, with {{native}} translations and examples",
+      "food": "Useful {{target}} words about food and everyday life, at {{level}} level, with {{native}} translations"
+    },
+    "generating_title": "Generating your deck…",
+    "generating_subtitle": "Selecting vocabulary, writing translations, and adding example sentences.",
+    "error_console": "Go back and try again. Your request has not been saved.",
+    "error_back": "← Go back",
+    "errors": {
+      "invalid_prompt": "Describe what you want to learn using up to 1000 characters.",
+      "unexpected_format": "The AI could not create a valid deck. Please try again.",
+      "service_unavailable": "The AI service is temporarily unavailable. Please try again.",
+      "save_failed": "The deck could not be saved. Please try again."
+    },
+    "review_title": "Review your deck",
+    "review_subtitle": "Edit, add, or delete cards before saving.",
+    "cards_count": "{{count}} cards",
+    "deck_title_label": "Deck title",
+    "front_language_label": "Front language",
+    "back_language_label": "Back language",
+    "save_button": "Save deck ({{count}} cards)",
+    "saving_button": "Saving…",
+    "add_card_button": "Add card",
+    "edit_card_label": "Edit card {{number}}",
+    "delete_card_label": "Delete card {{number}}",
+    "new_card_label": "New card",
+    "front_placeholder": "Front",
+    "back_placeholder": "Back",
+    "example_placeholder": "Example sentence (optional)",
+    "save_card": "Save",
+    "add_card": "Add",
+    "cancel": "Cancel"
+  },
+  "lexicoon": {
+    "subtitle": "An advanced dictionary personalized for your learning languages.",
+    "search_label": "Which word do you want to understand?",
+    "search_placeholder": "Type a word or short phrase…",
+    "search_button": "Search",
+    "search_hint": "You will get meanings in your native language and examples in the language you are learning.",
+    "empty_title": "Search for a word",
+    "empty_description": "LexiCoon will explain its meaning, usage, examples, synonyms, and antonyms.",
+    "corrected_from": "Corrected \"{{from}}\" to \"{{to}}\". Examples use the corrected form.",
+    "translations": "Translations",
+    "usage_note": "Usage note",
+    "essence": "In essence",
+    "explanation": "Explanation",
+    "contrast": "Contrast",
+    "meaning_synonyms": "Synonyms for this meaning",
+    "examples": "Examples",
+    "synonyms": "Synonyms",
+    "antonyms": "Antonyms",
+    "usage": "Written and spoken use",
+    "written": "Written",
+    "spoken": "Spoken",
+    "collocations": "Often used with",
+    "curiosity": "Worth knowing",
+    "errors": {
+      "invalid_query": "Enter a word or short phrase using up to 100 characters.",
+      "invalid_response": "LexiCoon could not create a valid dictionary entry. Please try again.",
+      "service_unavailable": "LexiCoon is temporarily unavailable. Please try again."
+    }
+  },
+  "stt": {
+    "start_recording": "Speak",
+    "stop_recording": "Stop recording",
+    "transcribing": "Transcribing…",
+    "transcribing_hint": "Transcribing your voice…",
+    "errors": {
+      "unsupported": "This browser cannot record audio.",
+      "microphone_denied": "Microphone access was denied. Allow access and try again.",
+      "transcription_failed": "Speech could not be recognized. Please try again."
+    }
+  },
+  "tts": {
+    "voice": "Voice",
+    "play_audio": "Play audio",
+    "play_pronunciation": "Play pronunciation",
+    "enable_auto_play": "Enable auto-play",
+    "disable_auto_play": "Disable auto-play",
+    "voices": {
+      "male": "Male",
+      "female": "Female"
+    }
+  }
+}

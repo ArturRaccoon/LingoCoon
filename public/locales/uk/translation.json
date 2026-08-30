@@ -1,0 +1,590 @@
+{
+  "common": {
+    "app_name": "LingoCoon",
+    "loading": "Завантаження...",
+    "error": "Помилка",
+    "success": "Успіх",
+    "save": "Зберегти",
+    "cancel": "Скасувати",
+    "delete": "Видалити",
+    "edit": "Редагувати",
+    "back": "Назад",
+    "next": "Далі",
+    "complete": "Завершити",
+    "logout": "Вийти",
+    "login": "Увійти",
+    "register": "Зареєструватися",
+    "email": "Email",
+    "password": "Пароль",
+    "confirm_password": "Підтвердити пароль",
+    "forgot_password": "Забули пароль?",
+    "or": "або",
+    "continue_with_google": "Продовжити з Google"
+  },
+  "auth": {
+    "or_sign_in_with_email": "Або увійти з email",
+    "login_title": "Вхід",
+    "register_title": "Реєстрація",
+    "reset_password_title": "Скинути пароль",
+    "email_placeholder": "ваш@email.com",
+    "password_placeholder": "••••••••",
+    "login_button": "Увійти",
+    "register_button": "Зареєструватися",
+    "logging_in": "Вхід...",
+    "registering": "Реєстрація...",
+    "sending": "Надсилання...",
+    "reset_password_description": "Введіть email, і ми надішлемо вам посилання для скидання паролю.",
+    "send_reset_email": "Надіслати лист для скидання",
+    "back_to_login": "Повернутися до входу",
+    "no_account": "Ще немає акаунту?",
+    "have_account": "Вже є акаунт?",
+    "errors": {
+      "fill_all_fields": "Заповніть усі поля",
+      "password_min_length": "Пароль має містити щонайменше 6 символів",
+      "passwords_not_match": "Паролі не збігаються",
+      "invalid_email": "Введіть дійсний email"
+    }
+  },
+  "onboarding": {
+    "welcome": "Ласкаво просимо!",
+    "subtitle": "Налаштуємо ваш досвід навчання",
+    "welcome_title": "Ласкаво просимо до LingoCoon",
+    "welcome_subtitle": "Вивчайте мови з персоналізованим навчанням",
+    "get_started": "Розпочати",
+    "setup_time": "Займе менше 2 хвилин",
+    "create_account_to_save": "Створіть акаунт, щоб зберегти вибір і почати навчання!",
+    "creating_account": "Створення акаунту...",
+    "saving": "Збереження...",
+    "skip": "Пропустити",
+    "optional": "необов'язково",
+    "tell_us_more": "Розкажіть більше",
+    "tell_us_more_placeholder": "Поділіться додатковими деталями про ваші цілі...",
+    "progress_region": "Прогрес реєстрації",
+    "progress_aria": "Крок {{current}} з {{total}}",
+    "welcome_benefits": {
+      "smart_title": "Персоналізоване Навчання",
+      "smart_desc": "Заняття адаптуються до вашого рівня і темпу",
+      "tracking_title": "Розумне Відстеження",
+      "tracking_desc": "Стежте за своїм прогресом з детальними даними",
+      "faster_title": "Вчіться Швидше",
+      "faster_desc": "Науково перевірені методи для запам'ятовування"
+    },
+    "step_indicator": "Крок {{current}} з {{total}}",
+    "step_labels": {
+      "welcome": "Вітання",
+      "native_label": "Рідна Мова",
+      "target_label": "Цільова Мова",
+      "level_label": "Ваш Рівень",
+      "purpose_label": "Мета Навчання",
+      "nickname_label": "Нікнейм",
+      "summary_label": "Підсумок"
+    },
+    "step1": {
+      "title": "Які мови ви хочете вивчати?",
+      "subtitle": "Оберіть рідну мову і ту, яку хочете вивчити",
+      "native_language": "Ваша рідна мова",
+      "native_subtitle": "Оберіть мову, якою вільно говорите",
+      "target_language": "Мова, яку хочете вивчити",
+      "target_subtitle": "Оберіть мову для вивчення"
+    },
+    "step2": {
+      "title": "Навіщо ви хочете вчитися?",
+      "subtitle": "Це допомагає нам персоналізувати ваш досвід",
+      "goals": {
+        "travel": "Подорожі",
+        "travel_desc": "Спілкуватися під час подорожей",
+        "work": "Робота",
+        "work_desc": "Професійне використання",
+        "study": "Навчання",
+        "study_desc": "Іспити та сертифікати",
+        "hobby": "Хобі",
+        "hobby_desc": "Особистий інтерес",
+        "culture": "Культура",
+        "culture_desc": "Фільми, книги, музика",
+        "conversation": "Спілкування",
+        "conversation_desc": "Розмовляти з носіями",
+        "other": "Інше",
+        "other_desc": "Особисті цілі"
+      }
+    },
+    "step3": {
+      "title": "Який у вас рівень?",
+      "subtitle": "У мові, яку ви хочете вивчити",
+      "levels": {
+        "absolute_beginner": "Абсолютний Початківець",
+        "absolute_beginner_desc": "Я ніколи не вивчав цю мову",
+        "beginner": "Початківець",
+        "beginner_desc": "Знаю кілька базових слів і фраз",
+        "elementary": "Елементарний",
+        "elementary_desc": "Прості речення",
+        "intermediate": "Середній",
+        "intermediate_desc": "Можу вести прості розмови",
+        "advanced": "Просунутий",
+        "advanced_desc": "Можу обговорювати складні теми",
+        "native": "Носій",
+        "native_desc": "Рівень носія мови"
+      }
+    },
+    "nickname_step": {
+      "title": "Як вас називати?",
+      "subtitle": "Оберіть нікнейм для свого профілю",
+      "placeholder": "Введіть нікнейм",
+      "aria_label": "Поле нікнейму",
+      "helper": "Ви можете змінити його в налаштуваннях"
+    },
+    "summary": {
+      "title": "Готові почати?",
+      "subtitle": "Перевірте свій вибір перед початком",
+      "level": "Поточний Рівень",
+      "purpose": "Мета Навчання",
+      "nickname": "Нікнейм",
+      "additional_details": "Додаткові Деталі",
+      "change_later": "Ви можете змінити ці налаштування у своєму профілі"
+    },
+    "continue_to_register": "Перейти до Реєстрації",
+    "errors": {
+      "select_both_languages": "Оберіть обидві мови",
+      "languages_must_differ": "Мови мають бути різними",
+      "select_at_least_one_goal": "Оберіть принаймні одну мету",
+      "select_level": "Оберіть свій рівень",
+      "generic_save": "Не вдалося зберегти налаштування. Спробуйте ще раз.",
+      "invalid_data": "Заповніть усі обов'язкові поля"
+    }
+  },
+  "publicOnboarding": {
+    "language": {
+      "title": "Яку мову ви хочете вивчити?",
+      "subtitle": "Оберіть мову для вивчення"
+    },
+    "goals": {
+      "title": "Навіщо ви хочете вчитися?",
+      "subtitle": "Оберіть одну або більше цілей",
+      "travel": "Подорожі",
+      "travel_desc": "Спілкуватися під час подорожей",
+      "work": "Робота",
+      "work_desc": "Професійний розвиток",
+      "study": "Навчання",
+      "study_desc": "Іспити та сертифікати",
+      "culture": "Культура",
+      "culture_desc": "Фільми, книги, музика",
+      "conversation": "Спілкування",
+      "conversation_desc": "Розмовляти з носіями",
+      "other": "Інше",
+      "other_desc": "Особисті цілі"
+    },
+    "level": {
+      "title": "Який у вас рівень?",
+      "subtitle": "У мові, яку ви хочете вивчити"
+    },
+    "levels": {
+      "beginner": "Початківець",
+      "beginner_desc": "Знаю дуже мало слів",
+      "elementary": "Елементарний",
+      "elementary_desc": "Прості речення",
+      "intermediate": "Середній",
+      "intermediate_desc": "Базові розмови",
+      "advanced": "Просунутий",
+      "advanced_desc": "Комфортно в більшості ситуацій",
+      "native": "Носій",
+      "native_desc": "Рівень носія мови"
+    },
+    "hasAccount": "Вже є акаунт?",
+    "signIn": "Увійти",
+    "continue": "Продовжити",
+    "finish": "Зберегти налаштування",
+    "style": {
+      "title": "Як ви навчаєтеся найкраще?",
+      "subtitle": "Оберіть стиль навчання",
+      "visual": "Візуальний",
+      "visual_desc": "Навчаюся, дивлячись зображення і відео",
+      "auditory": "Слуховий",
+      "auditory_desc": "Навчаюся, слухаючи аудіо і розмови",
+      "kinesthetic": "Кінестетичний",
+      "kinesthetic_desc": "Навчаюся, виконуючи вправи"
+    },
+    "errors": {
+      "selectLanguage": "Оберіть мову",
+      "selectGoal": "Оберіть принаймні одну мету",
+      "selectStyle": "Оберіть стиль навчання",
+      "selectLevel": "Оберіть свій рівень",
+      "generic": "Не вдалося зберегти налаштування. Спробуйте ще раз."
+    }
+  },
+  "home": {
+    "title": "Головна",
+    "welcome": "Ласкаво просимо",
+    "decks_desc": "Керуйте своїми колодами та починайте класичні навчальні сесії.",
+    "create_desc": "Додайте нову колоду для пари мов, які ви хочете практикувати.",
+    "ai_desc": "Спілкуйтеся вільно з AI або вивчайте колоди з AI-тьютором картка за карткою.",
+    "open": "Відкрити",
+    "create": "Створити",
+    "study_widget": {
+      "title": "Навчальна Сесія",
+      "cards_to_review": "{{count}} флеш-картка для повторення сьогодні",
+      "subtitle": "Тримайте пам'ять активною!",
+      "start": "Почати Зараз"
+    },
+    "stats": {
+      "total": "Всього Карток",
+      "new": "Нові",
+      "to_review": "До Повторення",
+      "mastered": "Засвоєні",
+      "avg_reviews": "Сер. Повторень"
+    },
+    "menu": {
+      "title": "Головне Меню",
+      "study_session": "Почати Навчальну Сесію",
+      "study_session_desc": "Повторіть заплановані картки на сьогодні",
+      "manage_flashcards": "Керувати Картками",
+      "manage_flashcards_desc": "Створюйте, редагуйте та видаляйте картки",
+      "progress": "Переглянути Прогрес",
+      "progress_desc": "Аналізуйте статистику навчання",
+      "settings": "Налаштування Профілю",
+      "settings_desc": "Змінюйте налаштування та конфігурації"
+    }
+  },
+  "flashcards": {
+    "title": "Управління Картками",
+    "create_new": "Додати Нову Картку",
+    "your_flashcards": "Ваші Флеш-картки",
+    "count": "{{count}} картка",
+    "count_plural": "{{count}} карток",
+    "empty_state": "Карток ще немає",
+    "empty_state_cta": "Додайте одну зліва!",
+    "load_more": "Завантажити Більше",
+    "form": {
+      "front_label": "Слово для вивчення",
+      "front_placeholder": "Введіть слово або фразу...",
+      "back_label": "Переклад",
+      "back_placeholder": "Введіть переклад...",
+      "original_text": "Оригінальний текст",
+      "translation": "Переклад",
+      "category": "Категорія (необов'язково)",
+      "category_placeholder": "Напр.: подорожі, робота, повсякденне",
+      "notes": "Нотатки (необов'язково)",
+      "notes_placeholder": "Додайте контекст або приклади використання",
+      "translate_auto": "Запропонувати переклади",
+      "translating": "Пошук значень...",
+      "suggestions_title": "Виберіть потрібне значення",
+      "suggestions_hint": "Виберіть варіант, а потім за потреби відредагуйте переклад.",
+      "save_card": "Зберегти Картку",
+      "saving": "Збереження...",
+      "creating": "Створення...",
+      "create_button": "Створити Картку",
+      "from_language": "З вашої мови:",
+      "to_language": "До:"
+    },
+    "edit": {
+      "front_label": "Лицьова сторона",
+      "back_label": "Зворотна сторона (Переклад)",
+      "front_placeholder": "Лицьова сторона картки",
+      "back_placeholder": "Зворотна сторона картки",
+      "save": "Зберегти",
+      "saving": "Збереження...",
+      "cancel": "Скасувати",
+      "edit_title": "Редагувати картку",
+      "delete_title": "Видалити картку",
+      "delete_confirm": "Ви впевнені, що хочете видалити цю картку?"
+    },
+    "errors": {
+      "original_required": "Оригінальний текст обов'язковий",
+      "translation_required": "Переклад обов'язковий",
+      "enter_text_to_translate": "Введіть текст для перекладу",
+      "translation_error": "Не вдалося запропонувати переклади. Введіть переклад вручну або спробуйте ще раз.",
+      "create_error": "Не вдалося створити картку. Спробуйте ще раз."
+    },
+    "success": {
+      "card_saved": "Картку успішно збережено!"
+    },
+    "delete_confirm": "Ви впевнені, що хочете видалити цю картку?"
+  },
+  "study": {
+    "session_complete_title": "Сесію Завершено!",
+    "session_complete_subtitle": "Ви повторили всі {{count}} карток.",
+    "back_to_deck": "Повернутися до Колоди",
+    "show_answer": "Показати Відповідь",
+    "ai_tutor_label": "AI Тьютор",
+    "progress": "{{current}} / {{total}}",
+    "ai_error": "Щось пішло не так. Спробуйте ще раз.",
+    "rating_save_error": "Не вдалося зберегти оцінку. Спробуйте ще раз.",
+    "restart": "Почати знову",
+    "responds_in": "Відповідає {{language}} мовою",
+    "ask_about_card": "Задайте питання про цю картку.",
+    "thinking": "Думаю…",
+    "ask_placeholder": "Запитайте щось…",
+    "send": "Надіслати",
+    "ratings": {
+      "again": "Забув",
+      "hard": "Важко",
+      "good": "Добре",
+      "easy": "Легко"
+    },
+    "ai_mode": {
+      "badge": "Режим AI",
+      "session_complete_title": "AI Сесія Завершена!",
+      "session_complete_subtitle": "Ви вивчили всі {{count}} карток з вашим AI-тьютором.",
+      "retry_classic": "Повторити (Класичний)",
+      "back_to_deck": "Повернутися до Колоди",
+      "send": "Надіслати",
+      "press_enter": "Натисніть Enter для надсилання",
+      "input_thinking": "AI думає…",
+      "input_placeholder": "Напишіть вашу відповідь…",
+      "start_error": "Виникла помилка при запуску сесії. Спробуйте ще раз.",
+      "ai_error": "Щось пішло не так. Спробуйте ще раз.",
+      "rating_save_error": "Не вдалося зберегти відповідь. Спробуйте ще раз або продовжуйте без збереження цієї оцінки.",
+      "continue_without_saving": "Продовжити"
+    }
+  },
+  "ai_page": {
+    "title": "Режим AI",
+    "tab_chat": "Вільний Чат",
+    "tab_decks": "Вчитися з Колодами",
+    "no_decks": "У вас ще немає колод.",
+    "create_first_deck": "Створіть свою першу колоду",
+    "deck_hint": "Оберіть колоду — AI-тьютор опитає вас картку за карткою.",
+    "start": "Почати",
+    "free_chat": "Вільний Чат",
+    "study_with_decks": "Вчитися з Колодами"
+  },
+  "chat": {
+    "welcome": "Привіт! Я Lingo, ваш AI-асистент з мов. Запитуйте будь-що — переклади, граматику, практичні розмови, або будь-що пов'язане з мовами!",
+    "thinking": "Lingo думає…",
+    "placeholder": "Запитайте мене будь-що…",
+    "press_enter": "Натисніть Enter для надсилання",
+    "error": "Щось пішло не так. Спробуйте ще раз."
+  },
+  "deck_actions": {
+    "delete_confirm": "Ви впевнені, що хочете видалити «{{title}}»?\n\nЦе назавжди видалить колоду та всі її картки. Цю дію неможливо скасувати.",
+    "deleting": "Видалення...",
+    "delete": "Видалити Колоду"
+  },
+  "study_session": {
+    "title": "Навчальна Сесія",
+    "progress": "Прогрес",
+    "progress_count": "{{current}} / {{total}}",
+    "loading": "Завантаження карток...",
+    "interrupt": "Перервати Сесію",
+    "completed": {
+      "title": "Сесію Завершено!",
+      "studied": "Ви вивчили <strong>{{count}}</strong> картку",
+      "no_cards": "Немає карток для повторення сьогодні.<br />Чудова робота!",
+      "back_to_dashboard": "Повернутися до Панелі",
+      "study_again": "Вчитися Знову",
+      "review_again": "Повторити ще раз",
+      "all_easy": "Ідеально, все легко!",
+      "motivation": "Постійність — ключ до успіху!",
+      "come_back": "Повертайтеся завтра, щоб продовжити навчання."
+    },
+    "deck_not_found": "Колоду не знайдено.",
+    "no_cards_due": "Немає карток на сьогодні",
+    "all_caught_up": "Ви закінчили вивчення цієї колоди на сьогодні.",
+    "study_all_cards": "Вчитися далі (всі картки)",
+    "evaluation": {
+      "question": "Як добре ви пам'ятали?",
+      "forgot": "Забув",
+      "forgot_desc": "Повторити незабаром",
+      "hard": "Важко",
+      "hard_desc": "З зусиллям",
+      "good": "Добре",
+      "good_desc": "Без проблем",
+      "easy": "Легко",
+      "easy_desc": "Ідеально!",
+      "tap_to_reveal": "Торкніться, щоб показати"
+    },
+    "card_info": {
+      "level": "Рівень:",
+      "reviews": "Повторень:",
+      "category": "Категорія:",
+      "remember_translation": "Пам'ятаєте переклад?",
+      "original": "Оригінал",
+      "translation": "Переклад",
+      "click_to_flip": "Клацніть, щоб побачити відповідь"
+    },
+    "empty_deck": "У цій колоді немає карток.",
+    "add_cards": "Додати Картки",
+    "click_to_flip_back": "← натисніть, щоб перевернути",
+    "explain_word": "Поясни це слово",
+    "ask_placeholder": "Запитай щось про цю картку…",
+    "ai_thinking": "думаю…"
+  },
+  "languages": {
+    "it-IT": "Італійська",
+    "en-US": "Англійська",
+    "uk-UA": "Українська",
+    "fr-FR": "Французька"
+  },
+  "settings": {
+    "title": "Налаштування",
+    "under_construction": "У Розробці",
+    "coming_soon": "Можливість змінювати налаштування буде доступна незабаром!",
+    "your_profile": "Ваш Профіль",
+    "native_language": "Рідна Мова:",
+    "target_language": "Цільова Мова:",
+    "level": "Рівень:",
+    "goals": "Цілі:",
+    "manage_desc": "Керуйте своїми налаштуваннями та профілем",
+    "language_preferences": "Мовні Налаштування",
+    "language_desc": "Оберіть мову інтерфейсу програми",
+    "application_language": "Мова Програми",
+    "application_language_hint": "Змінює мову меню, кнопок та тексту інтерфейсу. Мова навчального контенту налаштовується окремо у профілі.",
+    "profile_desc": "Ваш профіль навчання та налаштування"
+  },
+  "statistics": {
+    "title": "Статистика та Прогрес",
+    "under_construction": "У Розробці",
+    "coming_soon": "Детальна статистика буде доступна незабаром!"
+  },
+  "landing": {
+    "hero_title": "Оволодійте Мовами",
+    "hero_subtitle": "Ваш персональний помічник у вивченні мов для реальних результатів.",
+    "cta_start": "Почати Вчитися",
+    "cta_login": "Вже Маю Акаунт",
+    "login_button": "Увійти"
+  },
+  "cookies": {
+    "title": "Ми використовуємо cookies",
+    "description": "Ми використовуємо cookies для покращення досвіду. Продовжуючи, ви приймаєте нашу політику cookies.",
+    "accept": "Прийняти Всі",
+    "reject": "Відхилити Всі",
+    "readMore": "Дізнатися Більше"
+  },
+  "navigation": {
+    "dashboard": "Панель",
+    "ai": "Режим AI",
+    "flashcards": "Картки",
+    "lexicoon": "LexiCoon",
+    "settings": "Налаштування"
+  },
+  "decks": {
+    "title": "Центр Карток",
+    "subtitle": "Керуйте колодами та починайте вчитися",
+    "create_new": "Створити Колоду",
+    "card_count": "{{count}} карток",
+    "card_count_single": "{{count}} картка",
+    "study": "Вчитися",
+    "edit": "Редагувати",
+    "generate_with_ai": "Згенерувати з AI",
+    "study_with_ai": "Вчитися з AI",
+    "empty": {
+      "title": "Колод ще немає",
+      "description": "Створіть свою першу колоду, щоб почати організовувати картки.",
+      "create_button": "Створити Першу Колоду"
+    },
+    "modal": {
+      "create_title": "Створити Нову Колоду",
+      "deck_title": "Назва Колоди",
+      "title_placeholder": "Введіть назву колоди...",
+      "creating": "Створення...",
+      "create_button": "Створити Колоду",
+      "study_language": "Мова для вивчення",
+      "translate_language": "Ваша мова"
+    },
+    "back_to_decks": "Повернутися до Колод",
+    "start_study": "Почати Навчальну Сесію",
+    "cards_in_deck": "Картки в Колоді",
+    "errors": {
+      "title_required": "Введіть назву для колоди",
+      "create_failed": "Не вдалося створити колоду. Спробуйте ще раз."
+    },
+    "back_to_deck": "Повернутися до Колоди"
+  },
+  "ai_deck": {
+    "page_title": "Згенерувати колоду з AI",
+    "page_subtitle": "Опишіть, що хочете вивчити. AI згенерує флеш-картки для вас.",
+    "prompt_label": "Що ви хочете вивчити?",
+    "prompt_placeholder": "Напр. Створи колоду. Мова: {{target}}. Рівень: {{level}}. Мета: «{{purpose}}». Переклад: {{native}}",
+    "generate_button": "Згенерувати колоду",
+    "shortcut_hint": "⌘+Enter для генерації",
+    "examples_label": "Приклади",
+    "fallback_target_language": "мови, яку ви хочете вивчити",
+    "fallback_native_language": "вашої мови",
+    "fallback_level": "вашого поточного рівня",
+    "fallback_purpose": "вашої навчальної мети",
+    "suggestions": {
+      "personal_goal": "Створи колоду. Мова: {{target}}. Рівень: {{level}}. Моя мета: {{details}}. Переклад: {{native}}",
+      "purpose": "20 практичних слів. Мова: {{target}}. Мета: «{{purpose}}». Рівень: {{level}}. Переклад: {{native}}",
+      "conversation": "Поширені фрази для розмов. Мова: {{target}}. Мета: «{{purpose}}». Значення: {{native}}",
+      "verbs": "Основні дієслова. Мова: {{target}}. Рівень: {{level}}. Переклад і приклади: {{native}}",
+      "food": "Корисні слова про їжу та повсякденне життя. Мова: {{target}}. Рівень: {{level}}. Переклад: {{native}}"
+    },
+    "generating_title": "Генерація колоди…",
+    "generating_subtitle": "Підбір словника, переклад і додавання прикладових речень.",
+    "error_console": "Поверніться назад і спробуйте ще раз. Запит не було збережено.",
+    "error_back": "← Назад",
+    "errors": {
+      "invalid_prompt": "Опишіть, що хочете вивчити, використовуючи до 1000 символів.",
+      "unexpected_format": "AI не вдалося створити коректну колоду. Спробуйте ще раз.",
+      "service_unavailable": "Сервіс AI тимчасово недоступний. Спробуйте ще раз.",
+      "save_failed": "Не вдалося зберегти колоду. Спробуйте ще раз."
+    },
+    "review_title": "Перегляньте свою колоду",
+    "review_subtitle": "Відредагуйте, додайте або видаліть картки перед збереженням.",
+    "cards_count": "{{count}} карток",
+    "deck_title_label": "Назва колоди",
+    "front_language_label": "Мова лицьової сторони",
+    "back_language_label": "Мова зворотної сторони",
+    "save_button": "Зберегти колоду ({{count}} карток)",
+    "saving_button": "Збереження…",
+    "add_card_button": "Додати картку",
+    "edit_card_label": "Редагувати картку {{number}}",
+    "delete_card_label": "Видалити картку {{number}}",
+    "new_card_label": "Нова картка",
+    "front_placeholder": "Лицьова",
+    "back_placeholder": "Зворотна",
+    "example_placeholder": "Приклад речення (необов'язково)",
+    "save_card": "Зберегти",
+    "add_card": "Додати",
+    "cancel": "Скасувати"
+  },
+  "lexicoon": {
+    "subtitle": "Розширений словник, персоналізований для мов, які ви вивчаєте.",
+    "search_label": "Яке слово ви хочете зрозуміти?",
+    "search_placeholder": "Введіть слово або коротку фразу…",
+    "search_button": "Знайти",
+    "search_hint": "Ви отримаєте значення рідною мовою та приклади мовою, яку вивчаєте.",
+    "empty_title": "Знайдіть слово",
+    "empty_description": "LexiCoon пояснить значення, використання, приклади, синоніми й антоніми.",
+    "corrected_from": "Виправлено «{{from}}» на «{{to}}». Приклади використовують правильну форму.",
+    "translations": "Переклади",
+    "usage_note": "Примітка щодо використання",
+    "essence": "Коротко",
+    "explanation": "Пояснення",
+    "contrast": "Контраст",
+    "meaning_synonyms": "Синоніми для цього значення",
+    "examples": "Приклади",
+    "synonyms": "Синоніми",
+    "antonyms": "Антоніми",
+    "usage": "Письмове й усне використання",
+    "written": "Письмово",
+    "spoken": "Усно",
+    "collocations": "Часто вживається з",
+    "curiosity": "Варто знати",
+    "errors": {
+      "invalid_query": "Введіть слово або коротку фразу довжиною до 100 символів.",
+      "invalid_response": "LexiCoon не вдалося створити коректну словникову статтю. Спробуйте ще раз.",
+      "service_unavailable": "LexiCoon тимчасово недоступний. Спробуйте ще раз."
+    }
+  },
+  "stt": {
+    "start_recording": "Говорити",
+    "stop_recording": "Зупинити запис",
+    "transcribing": "Розпізнавання…",
+    "transcribing_hint": "Розпізнаю ваше мовлення…",
+    "errors": {
+      "unsupported": "Цей браузер не може записувати аудіо.",
+      "microphone_denied": "Доступ до мікрофона заборонено. Дозвольте доступ і спробуйте ще раз.",
+      "transcription_failed": "Не вдалося розпізнати мовлення. Спробуйте ще раз."
+    }
+  },
+  "tts": {
+    "voice": "Голос",
+    "play_audio": "Відтворити аудіо",
+    "play_pronunciation": "Відтворити вимову",
+    "enable_auto_play": "Увімкнути автовідтворення",
+    "disable_auto_play": "Вимкнути автовідтворення",
+    "voices": {
+      "male": "Чоловічий",
+      "female": "Жіночий"
+    }
+  }
+}
