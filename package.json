@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run security:secrets && npm run lint && npm run typecheck && npm run build",
     "security:secrets": "node scripts/check-secrets.mjs",
     "security:secrets:history": "node scripts/check-secrets.mjs --history",
     "security:secrets:self-test": "node scripts/check-secrets.mjs --self-test"

@@ -1,37 +1,64 @@
 # LingoCoon
 
-A flashcard-based language learning app built for real learners — not textbook exercises.
-Built with spaced repetition, multilingual support, and efficient review techniques in mind.
+LingoCoon is an early-stage personalized language-learning application built around contextual practice, learner feedback, and progress over time.
 
-## Live Demo
+The current public prototype includes flashcard study, multilingual onboarding, AI-assisted practice, dictionary lookup, speech input, text-to-speech, authentication, and spaced-repetition foundations. The product is undergoing a structured rebuild; the current prototype should not be treated as the final learning experience.
 
-👉 **[https://lingocoon.vercel.app](https://lingocoon.vercel.app)**
+## Live application
 
-No installation needed — the app is deployed and fully functional. Just open the link.
+[lingocoon.vercel.app](https://lingocoon.vercel.app)
 
----
+## Technology
 
-## Tech Stack
+| Area | Technology |
+| --- | --- |
+| Application | Next.js 16 with App Router |
+| Interface | React 19, Tailwind CSS, Radix UI |
+| Language | TypeScript in strict mode |
+| Authentication and data | Supabase |
+| Validation | Zod |
+| Internationalization | i18next |
+| Deployment | Vercel |
 
-| Layer          | Tech                          |
-|----------------|--------------------------------|
-| Framework      | Next.js 16 (App Router)        |
-| UI             | React 19 + Tailwind CSS        |
-| Animations     | Framer Motion                  |
-| Backend / DB   | Supabase                       |
-| Language       | TypeScript (strict)            |
-| Hosting        | Vercel                         |
+## Local development
 
-## Features
+Requirements:
 
-- 📇 Flashcard review system
-- 🌍 Multi-language support
-- 📖 Advanced dictionary with structured lookups
-- 💬 AI chat for interactive practice (Google Gemini)
-- 🎙️ Optional speech recognition with a Whisper-compatible transcription API
-- 🔊 Text-to-speech (ElevenLabs)
-- 🔐 OAuth 2.0 / JWT authentication with Row Level Security
-- ⚡ Spaced repetition (in progress)
-- 🎞️ Smooth card animations
+- Node.js 20.9 or later; CI uses Node.js 24;
+- npm;
+- a local environment file based on `.env.local.example`.
 
----
+```bash
+npm ci
+cp .env.local.example .env.local
+npm run dev
+```
+
+The local application is available at `http://localhost:3000` by default.
+
+## Verification
+
+Run the complete local verification pipeline with:
+
+```bash
+npm run check
+```
+
+The pipeline scans the current tree for credential patterns, runs ESLint, checks TypeScript, and creates a production build. GitHub Actions runs the same checks for pull requests and updates to `main`.
+
+## Repository structure
+
+```text
+.github/workflows/  Continuous integration
+public/locales/     Translation resources
+scripts/            Repository maintenance and security scripts
+src/app/            Next.js routes and server endpoints
+src/components/     Shared and domain-oriented interface components
+src/hooks/          Client-side reusable behavior
+src/lib/            Application, server, data, and integration logic
+src/types/          Shared TypeScript contracts
+```
+
+## Security
+
+Never commit `.env.local`, provider credentials, downloaded service-account files, or production data. Use `.env.local.example` only as a variable-name template and run `npm run security:secrets` before publishing changes.
