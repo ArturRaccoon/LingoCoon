@@ -24,9 +24,9 @@ The current public prototype includes flashcard study, multilingual onboarding, 
 
 Requirements:
 
-- Node.js 20.9 or later; CI uses Node.js 24;
-- npm;
-- a local environment file based on `.env.local.example`.
+- Node.js 20.9 or later (CI uses Node.js 24)
+- npm
+- a local environment file based on `.env.local.example`
 
 ```bash
 npm ci
