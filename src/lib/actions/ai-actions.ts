@@ -22,10 +22,16 @@ import {
   InvalidGeneratedDeckError,
   parseGeneratedDeck,
 } from '@/lib/server/ai-deck-generation';
+import { resolveTutorContext } from '@/lib/server/tutor-context';
+import {
+  buildSafeTutorHistory,
+  parseTutorConversationRequest,
+  TUTOR_SECURITY_INSTRUCTIONS,
+} from '@/lib/server/tutor-request';
 import { requireAuthenticatedClaims } from '@/lib/supabase/auth';
 import { getProfile } from '@/lib/supabase/profile';
 import type { GeneratedDeck } from '@/types/ai-deck';
-import type { ConversationTurn } from '@/types/ai';
+import type { ConversationTurn, TutorConversationRequest } from '@/types/ai';
 
 export type { ConversationTurn } from '@/types/ai';
 
@@ -35,35 +41,24 @@ export type AiDeckGenerationErrorKey =
   | 'service_unavailable';
 
 /**
- * Send a single message to the AI tutor and get a reply.
- * Wraps a one-turn conversation — shortcut for simple requests.
+ * Resolve a typed tutor operation into server-owned instructions and untrusted user messages.
  */
-export async function sendMessageToAiTutor(
-  systemPrompt: string,
-  userMessage: string,
-): Promise<string> {
-  const singleTurnHistory: ConversationTurn[] = [
-    { role: 'user', parts: [{ text: userMessage }] },
-  ];
-  return sendConversationToAiTutor(systemPrompt, singleTurnHistory);
-}
-
-/**
- * Send a full conversation history to the AI tutor and get the next reply.
- * Used by study sessions, general chat, and deck study.
- */
-export async function sendConversationToAiTutor(
-  systemPrompt: string,
-  conversationHistory: ConversationTurn[],
+export async function sendTutorConversation(
+  value: TutorConversationRequest,
 ): Promise<string> {
   try {
-    const { claims } = await requireAuthenticatedClaims();
-    return await sendChatMessageToGemini(systemPrompt, conversationHistory, {
+    const request = parseTutorConversationRequest(value);
+    const { claims, supabase } = await requireAuthenticatedClaims();
+    const tutorContext = await resolveTutorContext(request, supabase, claims.sub);
+    const systemPrompt = `${tutorContext.systemPrompt}\n\n${TUTOR_SECURITY_INSTRUCTIONS}`;
+    const history = buildSafeTutorHistory(tutorContext.context, request.history);
+
+    return await sendChatMessageToGemini(systemPrompt, history, {
       userId: claims.sub,
     });
   } catch (error) {
     const message = getHumanReadableAiError(error);
-    console.error('[sendConversationToAiTutor]', message, error);
+    console.error('[sendTutorConversation]', message, error);
     throw new Error(message);
   }
 }

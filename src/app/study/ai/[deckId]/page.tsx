@@ -1,5 +1,6 @@
 
 import { loadScheduledStudyPageData } from '@/lib/study-page';
+import { MAX_AI_STUDY_CARDS } from '@/lib/tutor-security';
 import AiStudySession from '@/components/study/AiStudySession';
 import { DeckNotFound, NoCardsDue } from '@/components/study/StudyFeedback';
 
@@ -13,7 +14,7 @@ export default async function AiStudyPage({
   const { deckId } = await params;
   const { mode } = await searchParams;
 
-  const { cardResult, deck, nativeLanguage } = await loadScheduledStudyPageData(
+  const { cardResult, deck } = await loadScheduledStudyPageData(
     deckId,
     mode === 'all',
   );
@@ -28,9 +29,8 @@ export default async function AiStudyPage({
 
   return (
     <AiStudySession
-      cards={cardResult.cards}
+      cards={cardResult.cards.slice(0, MAX_AI_STUDY_CARDS)}
       deck={deck}
-      nativeLanguage={nativeLanguage}
     />
   );
 }

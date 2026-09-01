@@ -43,6 +43,9 @@ jobs:
       - name: Scan for committed secrets
         run: npm run security:secrets
 
+      - name: Run security boundary tests
+        run: npm run test:security
+
       - name: Lint
         run: npm run lint
 

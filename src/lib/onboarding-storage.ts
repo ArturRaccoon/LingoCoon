@@ -1,7 +1,12 @@
 import type { OnboardingData } from '@/lib/supabase/types';
+import {
+  createExpiringStorageEnvelope,
+  readExpiringStorageEnvelope,
+} from '@/lib/expiring-storage';
 import { isValidOnboardingData } from '@/lib/onboarding';
 
 const PENDING_ONBOARDING_STORAGE_KEY = 'pending_onboarding';
+const PENDING_ONBOARDING_TTL_MS = 24 * 60 * 60 * 1_000;
 
 export function parsePendingOnboarding(value: unknown): OnboardingData | null {
   if (!isValidOnboardingData(value)) return null;
@@ -23,8 +28,13 @@ export function loadPendingOnboarding(): OnboardingData | null {
   if (!storedValue) return null;
 
   try {
-    return parsePendingOnboarding(JSON.parse(storedValue));
+    const value = readExpiringStorageEnvelope(JSON.parse(storedValue));
+    const onboarding = parsePendingOnboarding(value);
+
+    if (!onboarding) clearPendingOnboarding();
+    return onboarding;
   } catch {
+    clearPendingOnboarding();
     return null;
   }
 }
@@ -35,7 +45,8 @@ export function savePendingOnboarding(data: OnboardingData) {
     throw new Error('Cannot save invalid onboarding data.');
   }
 
-  window.localStorage.setItem(PENDING_ONBOARDING_STORAGE_KEY, JSON.stringify(data));
+  const envelope = createExpiringStorageEnvelope(data, PENDING_ONBOARDING_TTL_MS);
+  window.localStorage.setItem(PENDING_ONBOARDING_STORAGE_KEY, JSON.stringify(envelope));
 }
 
 export function clearPendingOnboarding() {

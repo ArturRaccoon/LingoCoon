@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { sendConversationToAiTutor } from '@/lib/actions/ai-actions';
+import { sendTutorConversation } from '@/lib/actions/ai-actions';
 import { parseAiStudyReply } from '@/lib/ai-response';
 import {
   createConversationTurn,
@@ -13,7 +13,6 @@ import {
   toAiStudyFsrsRating,
 } from '@/lib/ai-study-session';
 import type { PendingStudyTransition } from '@/lib/ai-study-session';
-import { buildAiStudySystemPrompt } from '@/lib/ai-study';
 import { getChatInputLengthError } from '@/lib/chat';
 import { appendTranscript } from '@/lib/transcript';
 import { useAiStudyRatingPersistence } from '@/hooks/useAiStudyRatingPersistence';
@@ -30,13 +29,11 @@ import type { TtsVoicePreset } from '@/lib/tts';
 interface AiStudySessionProps {
   cards: SessionCard[];
   deck: Deck;
-  nativeLanguage: string;
 }
 
 export default function AiStudySession({
   cards,
   deck,
-  nativeLanguage,
 }: AiStudySessionProps) {
   const { t } = useTranslation();
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -51,7 +48,7 @@ export default function AiStudySession({
 
   const inputRef = useRef<HTMLInputElement>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const systemPromptRef = useRef(buildAiStudySystemPrompt(cards, deck, nativeLanguage));
+  const cardIdsRef = useRef(cards.map((card) => card.id));
   const hasStartedRef = useRef(false);
   const completionTimerRef = useRef<number | null>(null);
   const { loadingRequestId, playAudio, stopAudio } = useTtsAudio();
@@ -130,7 +127,12 @@ export default function AiStudySession({
       try {
         const startTurn = createConversationTurn('user', 'Start the session.');
         const initialHistory = [startTurn];
-        const rawResponse = await sendConversationToAiTutor(systemPromptRef.current, initialHistory);
+        const rawResponse = await sendTutorConversation({
+          operation: 'ai_study',
+          deckId: deck.id,
+          cardIds: cardIdsRef.current,
+          history: initialHistory,
+        });
         const aiTurn = createConversationTurn('model', rawResponse);
 
         setHistory([...initialHistory, aiTurn]);
@@ -147,7 +149,7 @@ export default function AiStudySession({
     };
 
     void startSession();
-  }, [t]);
+  }, [deck.id, t]);
 
   const handleSend = async () => {
     const text = input.trim();
@@ -176,7 +178,12 @@ export default function AiStudySession({
     setIsLoading(true);
 
     try {
-      const rawResponse = await sendConversationToAiTutor(systemPromptRef.current, newHistory);
+      const rawResponse = await sendTutorConversation({
+        operation: 'ai_study',
+        deckId: deck.id,
+        cardIds: cardIdsRef.current,
+        history: newHistory,
+      });
       const parsed = parseAiStudyReply(rawResponse) ?? createFallbackAiStudyReply(rawResponse);
       const aiTurn = createConversationTurn('model', rawResponse);
 
