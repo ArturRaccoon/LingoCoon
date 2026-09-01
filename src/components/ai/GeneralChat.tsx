@@ -1,9 +1,8 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { sendConversationToAiTutor } from '@/lib/actions/ai-actions';
-import { buildGeneralChatSystemPrompt } from '@/lib/chat-prompts';
+import { sendTutorConversation } from '@/lib/actions/ai-actions';
 import { getChatInputLengthError } from '@/lib/chat';
 import { appendTranscript } from '@/lib/transcript';
 import { useAutoPlayLatestAiMessage } from '@/hooks/useAutoPlayLatestAiMessage';
@@ -21,10 +20,6 @@ interface GeneralChatProps {
 export default function GeneralChat({ nativeLanguage, targetLanguage }: GeneralChatProps) {
   const { t } = useTranslation();
   const welcomeMessage = t('chat.welcome');
-  const systemPrompt = useMemo(
-    () => buildGeneralChatSystemPrompt(nativeLanguage ?? 'en', targetLanguage),
-    [nativeLanguage, targetLanguage],
-  );
   const [messages, setMessages] = useState<ChatMessage[]>([
     { role: 'ai', text: welcomeMessage },
   ]);
@@ -74,7 +69,10 @@ export default function GeneralChat({ nativeLanguage, targetLanguage }: GeneralC
     setIsLoading(true);
 
     try {
-      const reply = await sendConversationToAiTutor(systemPrompt, updatedHistory);
+      const reply = await sendTutorConversation({
+        operation: 'general_chat',
+        history: updatedHistory,
+      });
       const aiTurn: ConversationTurn = { role: 'model', parts: [{ text: reply }] };
 
       setHistory([...updatedHistory, aiTurn]);

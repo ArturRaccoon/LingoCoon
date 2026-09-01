@@ -1,9 +1,9 @@
 'use client';
 
-import { useCallback, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import type { MouseEvent } from 'react';
 import { useTranslation } from 'react-i18next';
-import { sendConversationToAiTutor } from '@/lib/actions/ai-actions';
+import { sendTutorConversation } from '@/lib/actions/ai-actions';
 import { rateCard } from '@/lib/actions/deck-actions';
 import { getChatInputLengthError } from '@/lib/chat';
 import {
@@ -13,7 +13,6 @@ import {
 } from '@/lib/deck-study';
 import { appendTranscript } from '@/lib/transcript';
 import { useTtsAudio } from '@/hooks/useTtsAudio';
-import { buildDeckStudyTutorPrompt } from '@/lib/study-prompts';
 import { DeckStudyCompletion } from '@/components/study/DeckStudyCompletion';
 import type { DeckStudySessionStats } from '@/components/study/DeckStudyCompletion';
 import { DeckStudyEmpty } from '@/components/study/DeckStudyEmpty';
@@ -54,11 +53,6 @@ export default function DeckStudySession({
 
   const currentCard = cards[currentIndex];
   const displayCard = getDeckStudyDisplayCard(currentCard, deck, nativeLanguage);
-  const buildSystemPrompt = useCallback(
-    () => buildDeckStudyTutorPrompt(currentCard, deck.language_from, nativeLanguage),
-    [currentCard, deck.language_from, nativeLanguage],
-  );
-
   const finishSession = (finalRatings: Record<string, CardRating>) => {
     setSessionComplete(true);
     const hardCards = getHardStudyCards(cards, finalRatings);
@@ -110,7 +104,12 @@ export default function DeckStudySession({
     setAiLoading(true);
 
     try {
-      const reply = await sendConversationToAiTutor(buildSystemPrompt(), updatedHistory);
+      const reply = await sendTutorConversation({
+        operation: 'deck_study',
+        deckId,
+        cardId: currentCard.id,
+        history: updatedHistory,
+      });
       setAiHistory((history) => [...history, { role: 'model', parts: [{ text: reply }] }]);
     } catch (error) {
       const message = error instanceof Error ? error.message : t('study.ai_error');

@@ -4,10 +4,9 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { Rating } from 'ts-fsrs';
-import { sendConversationToAiTutor } from '@/lib/actions/ai-actions';
+import { sendTutorConversation } from '@/lib/actions/ai-actions';
 import { rateCard } from '@/lib/actions/deck-actions';
 import { appendTranscript } from '@/lib/transcript';
-import { buildClassicStudyTutorPrompt } from '@/lib/study-prompts';
 import AiPanel from '@/components/study/AiPanel';
 import { ClassicStudyCard } from '@/components/study/ClassicStudyCard';
 import { ClassicStudyCompletion } from '@/components/study/ClassicStudyCompletion';
@@ -77,10 +76,12 @@ export default function StudySession({ cards, deck, nativeLanguage }: StudySessi
     setIsAiLoading(true);
 
     try {
-      const response = await sendConversationToAiTutor(
-        buildClassicStudyTutorPrompt(currentCard, nativeLanguage),
-        updatedHistory,
-      );
+      const response = await sendTutorConversation({
+        operation: 'classic_study',
+        deckId: deck.id,
+        cardId: currentCard.id,
+        history: updatedHistory,
+      });
       setAiHistory([
         ...updatedHistory,
         { role: 'model', parts: [{ text: response }] },

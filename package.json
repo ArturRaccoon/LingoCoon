@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "check": "npm run security:secrets && npm run lint && npm run typecheck && npm run build",
+    "test:security": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/*.test.mjs",
+    "check": "npm run security:secrets && npm run test:security && npm run lint && npm run typecheck && npm run build",
     "security:secrets": "node scripts/check-secrets.mjs",
     "security:secrets:history": "node scripts/check-secrets.mjs --history",
     "security:secrets:self-test": "node scripts/check-secrets.mjs --self-test"
